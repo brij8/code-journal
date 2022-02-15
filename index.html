@@ -15,28 +15,70 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container"></div>
-  <header>
-    <h2>Code Journal</h2>
-  </header>
-  <main>
-
+  <div class="container">
     <div class="row">
-      <div data-view="entry-form">
-        <form action="" method="post">
-          <h2>New Entry</h2>
-          <img src="images/placeholder-image-square.jpg">
-          <label for="title">Title</label>
-          <input type="text" id="title">
-          <label for="photo-url">Photo URL</label>
-          <input type="text" id="photo-url">
-          <label for="notes">Notes</label>
-          <textarea name="notes"></textarea>
-        </form>
-      </div>
+      <header>
+        <h2>Code Journal</h2>
+      </header>
     </div>
+    <main>
+      <div data-view="entry-form">
 
-  </main>
+        <form action="" method="post">
+
+          <div class="row">
+            <h2>New Entry</h2>
+          </div>
+
+          <div class="row">
+            <div class="column-2">
+
+              <div class="row">
+                <div class="image">
+                  <img src="images/placeholder-image-square.jpg" alt="placeholder">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="title">
+                  <div class="title-label">
+                    <label for="title">Title</label>
+                  </div>
+                  <div class="title-input">
+                    <input type="text" id="title">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="photoURL">
+                  <div class="photoURL-label">
+                    <label for="photo-url">Photo URL</label>
+                  </div>
+                  <div class="photoURL-input">
+                    <input type="text" id="photo-url">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="notes">
+              <div class="notes-label">
+                <label for="notes">Notes</label>
+              </div>
+              <div class="notes-input">
+                <textarea name="notes"></textarea>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+    </main>
   </div>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
