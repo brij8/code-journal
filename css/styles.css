@@ -1,10 +1,6 @@
-.notes {
-  width: 100%;
-}
-
 .notes-input textarea {
-  width: 100%;
   height: 100px;
+  resize: none;
 }
 
 .column-half {
@@ -25,7 +21,7 @@
 #title,
 #photo-url {
   width: 100%;
-  border: 1px solid rgb(182, 182, 182);
+  border: 1.5px solid rgb(182, 182, 182);
   border-radius: 3px;
 }
 
@@ -33,7 +29,14 @@
 #title:focus,
 #photo-url:focus {
   outline: none;
-  border: 2px solid #562b81;
+  border: 1.5px solid #562b81;
+}
+
+#notes:hover,
+#title:hover,
+#photo-url:hover {
+  outline: none;
+  border: 1.5px solid #562b81;
 }
 
 .button {
@@ -48,6 +51,7 @@ button {
   border-radius: 3px;
   padding: 5px 15px;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 img {
