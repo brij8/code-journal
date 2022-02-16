@@ -7,7 +7,7 @@
   padding-bottom: 15px;
 }
 
-.title {
+.title-div {
   padding-bottom: 15px;
 }
 
@@ -17,24 +17,24 @@
   margin-bottom: 5px;
 }
 
-#notes,
-#title,
-#photo-url {
+.notes,
+.title,
+.photo-url {
   width: 100%;
   border: 1.5px solid rgb(182, 182, 182);
   border-radius: 3px;
 }
 
-#notes:focus,
-#title:focus,
-#photo-url:focus {
+.notes:focus,
+.title:focus,
+.photo-url:focus {
   outline: none;
   border: 1.5px solid #562b81;
 }
 
-#notes:hover,
-#title:hover,
-#photo-url:hover {
+.notes:hover,
+.title:hover,
+.photo-url:hover {
   outline: none;
   border: 1.5px solid #562b81;
 }
