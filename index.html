@@ -15,15 +15,16 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="purple-bar"></div>
+
   <div class="container">
-    <div class="row">
-      <header>
-        <h2>Code Journal</h2>
-      </header>
-    </div>
+
+    <header>
+      <h3>Code Journal</h3>
+    </header>
+
     <main>
       <div data-view="entry-form">
-
         <form action="" method="post">
 
           <div class="row">
@@ -31,54 +32,58 @@
           </div>
 
           <div class="row">
-            <div class="column-2">
 
-              <div class="row">
-                <div class="image">
-                  <img src="images/placeholder-image-square.jpg" alt="placeholder">
-                </div>
+            <div class="column-half">
+              <div class="image">
+                <img src="images/placeholder-image-square.jpg" alt="placeholder">
               </div>
-
-              <div class="row">
-                <div class="title">
-                  <div class="title-label">
-                    <label for="title">Title</label>
-                  </div>
-                  <div class="title-input">
-                    <input type="text" id="title">
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="photoURL">
-                  <div class="photoURL-label">
-                    <label for="photo-url">Photo URL</label>
-                  </div>
-                  <div class="photoURL-input">
-                    <input type="text" id="photo-url">
-                  </div>
-                </div>
-              </div>
-
             </div>
+
+
+            <div class="column-half">
+              <div class="title">
+                <div class="title-label">
+                  <label for="title">Title</label>
+                </div>
+                <div class="title-input">
+                  <input type="text" id="title">
+                </div>
+              </div>
+
+              <div class="photo-url">
+                <div class="photo-url-label">
+                  <label for="photo-url">Photo URL</label>
+                </div>
+                <div class="photo-url-input">
+                  <input type="text" id="photo-url">
+                </div>
+              </div>
+            </div>
+
           </div>
 
+
           <div class="row">
-            <div class="notes">
+            <div class="notes column-full">
               <div class="notes-label">
                 <label for="notes">Notes</label>
               </div>
               <div class="notes-input">
-                <textarea name="notes"></textarea>
+                <textarea name="notes" id="notes"></textarea>
+              </div>
+              <div class="button">
+                <button>SAVE</button>
               </div>
             </div>
           </div>
 
-        </form>
 
+
+
+        </form>
       </div>
     </main>
+
   </div>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
