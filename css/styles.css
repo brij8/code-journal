@@ -83,3 +83,8 @@ header {
   right: 0;
   height: 2.5rem;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
